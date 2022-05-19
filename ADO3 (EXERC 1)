@@ -1,0 +1,20 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    double valor;
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite o valor do produto: ");
+    valor = scan.nextDouble();
+
+    if(valor >= 300) {
+      System.out.println("O valor do produto descontado é: " + (0.8 * valor));
+      System.out.println("O valor do desconto é: " + (0.2 * valor));
+    } else {
+      System.out.println("O valor do produto descontado é: " + (0.85 * valor));
+      System.out.println("O valor do desconto é: " + (0.15 * valor));
+    }
+
+    
+  }
+}
