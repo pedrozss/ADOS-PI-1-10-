@@ -1,0 +1,24 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+  double a,b,c;
+
+    Scanner scan = new Scanner(System.in);
+
+    System.out.println("Digite o valor do primeiro lado: ");
+    a = scan.nextDouble();
+    System.out.println("Digite o valor do segundo lado: ");
+    b = scan.nextDouble();
+    System.out.println("Digite o valor do terceiro lado: ");
+    c = scan.nextDouble();
+
+    if (a == b && a == c && b == c){
+      System.out.println("Os valores formam um triângulo equilátero");
+    } else if (a < b+c && b < a+c && c < a+b){
+      System.out.println("Os valores formam um triângulo isósceles");
+    } else {
+      System.out.println("Os valores formam um triângulo escaleno");
+    }
+   
+  }
+}
